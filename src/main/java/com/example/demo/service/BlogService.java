@@ -41,5 +41,9 @@ public class BlogService {
         return article;
     }
 
+    public void delete(long id){
+        blogRepository.deleteById(id);
+    }
+
 
 }
